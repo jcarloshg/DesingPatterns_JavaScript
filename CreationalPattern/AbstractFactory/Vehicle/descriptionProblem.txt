@@ -1,0 +1,37 @@
+
+[[[[[[      Descripción      ]]]]]]
+
+- El objetivo del patrón Abstract Factory es la creación de objetos agrupados en
+familias sin tener que conocer las clases concretas destinadas a la creación de estos
+objetos
+
+
+
+[[[[[[      Ejemplo     ]]]]]]
+
+- Un sistema de venta de vehículos gestiona vehículos que funcionan con gasolina y
+vehículos eléctricos Esta gestión está delegada en el objeto Catalogo encargado de
+crear tales objetos
+
+- Para cada producto, disponemos de una clase abstracta, de una subclase concreta
+derivando una versión del producto que funciona con gasolina y de una subclase
+concreta derivando una versión del producto que funciona con electricidad
+
+- Por ejemplo en la figura, para el objeto Scooter, existe una clase abstracta Scooter y
+dos subclases concretas ScooterElectricidad y ScooterGasolina
+
+- El objeto Catálogo puede utilizar estas subclases concretas para instanciar los
+productos
+
+- No obstante si fuera necesario incluir nuevas clase de familias de vehículos (diesel o
+mixto gasolina eléctrico), las modificaciones a realizar en el objeto Catalogo pueden
+ser bastante pesadas
+
+
+
+[[[[[[      El patrón se utiliza en los siguientes dominios     ]]]]]
+
+- Un sistema que utiliza productos necesita ser independiente de la forma en que se crean y
+agrupan estos productos.
+
+- Un sistema está configurado según varias familias de productos que pueden evolucionar.
