@@ -1,0 +1,35 @@
+
+[[[[[[      Descripción      ]]]]]]
+
+- El objetivo del patrón Abstract Factory es la creación de objetos agrupados en
+familias sin tener que conocer las clases concretas destinadas a la creación de estos
+objetos
+
+
+
+[[[[[[      El patrón se utiliza en los siguientes dominios     ]]]]]
+
+- Un sistema que utiliza productos necesita ser independiente de la forma en que se crean y
+agrupan estos productos.
+
+- Un sistema está configurado según varias familias de productos que pueden evolucionar.
+
+
+
+========================================================================  Ejemplos
+
+
+
+}}}}}}}}}}}} COMEDORES {{{{{{{{{{{{
+
+- Una sistema que gestiona el inventario una tieneda que vende muebles; lleva el control
+de los diferentes tipos de comedores [rustico, moderno, futurista]
+
+- las diferentes categorias [rustico, moderno, futurista] representan diferentes estilos
+de construcción y acabados
+
+- Este sistema necesita la creacion de instancias los comedores, de los diferentes tipos
+de estilos cuando terminan de ser construidos y necesitan registrarse
+
+- el registro de cada comdedor, también lleva el registro de cada una de las piezas del
+mismo (sillas, mesa, cojines)
