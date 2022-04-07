@@ -16,8 +16,11 @@ agrupan estos productos.
 
 
 
+========================================================================  Ejemplos
 
-[[[[[[      Ejemplo     ]]]]]]
+
+
+}}}}}}}}}}}} VEHICULOS {{{{{{{{{{{{
 
 - Un sistema de venta de vehículos gestiona vehículos que funcionan con gasolina y
 vehículos eléctricos Esta gestión está delegada en el objeto Catalogo encargado de
@@ -36,3 +39,18 @@ productos
 - No obstante si fuera necesario incluir nuevas clase de familias de vehículos (diesel o
 mixto gasolina eléctrico), las modificaciones a realizar en el objeto Catalogo pueden
 ser bastante pesadas
+
+
+}}}}}}}}}}}} COMEDORES {{{{{{{{{{{{
+
+- Una sistema que gestiona el inventario una tieneda que vende muebles; lleva el control
+de los diferentes tipos de comedores [rustico, moderno, futurista]
+
+- las diferentes categorias [rustico, moderno, futurista] representan diferentes estilos
+de construcción y acabados
+
+- Este sistema necesita la creacion de instancias los comedores, de los diferentes tipos
+de estilos cuando terminan de ser construidos y necesitan registrarse
+
+- el registro de cada comdedor, también lleva el registro de cada una de las piezas del
+mismo (sillas, mesa, cojines)
