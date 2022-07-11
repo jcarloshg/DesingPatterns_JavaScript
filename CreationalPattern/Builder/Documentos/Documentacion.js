@@ -8,7 +8,7 @@ class Documentacion {
 
     /**
      * add [documento] to [contenido]
-     * @param {string} document 
+     * @param {string} document
      */
     addDocument(document) {
         throw new Error('[addDocument] this a method abstract');
@@ -22,6 +22,5 @@ class Documentacion {
     }
 
 }
-
 
 module.exports = Documentacion;
